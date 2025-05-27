@@ -177,6 +177,6 @@ describe('User Map', () => {
 
 - Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). Introduction to Algorithms (4.ª ed.). MIT Press.
 - Goodrich, M., Tamassia, R., & Goldwasser, M. (2014). Data Structures and Algorithms in Python. Wiley.
-- Oracle. (2024). Java Platform Documentation. <https://docs.oracle.com/en/java/>
-- Python Software Foundation. (2024). collections — Container datatypes. <https://docs.python.org/3/library/collections.html>
-- TypeScript Handbook. (2024). <https://www.typescriptlang.org/docs/>
+- Oracle. (2024). [Java Platform Documentation.](https://docs.oracle.com/en/java/)
+- Python Software Foundation. (2024). [collections — Container datatypes.](https://docs.python.org/3/library/collections.html)
+- [TypeScript Handbook. (2024).](https://www.typescriptlang.org/docs/)
