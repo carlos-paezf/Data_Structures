@@ -12,7 +12,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
 
 - Módulo 01: Fundamentos de Estructuras de Datos:
   - Introducción a las estructuras de datos:
-    - ¿Que son y para qué sirven?
+    - ¿Qué son y para qué sirven?
     - Eficiencia, espacio y tiempo
     - Tipos de estructuras: primitivas y abstractas
     - TDA (Tipos de datos abstractos)
@@ -34,7 +34,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
   - Stack (Pilas): LIFO, implementación con arrays y listas enlazadas
   - Queue (Colas): FIFO, variantes (colas dobles, de prioridad)
   - Evaluación de competencias: Proyecto de simulación para uso combinado de listas y colas
-- Módulos 03: Algoritmos de Ordenamiento
+- Módulo 03: Algoritmos de Ordenamiento
   - Fundamentos del ordenamiento: estabilidad, adaptabilidad y comparaciones
   - Ordenamientos básicos:
     - Bubble Sort
@@ -70,7 +70,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
     - Dijkstra
     - Floyd-Warshall
     - Prim
-    - Krustal
+    - Kruskal
   - Aplicaciones reales: mapas, redes sociales, sistemas de recomendación
   - Evaluación de competencias: Proyecto recomendador de amigos basado en grafos
 - Módulo 06: Estructuras especializadas
