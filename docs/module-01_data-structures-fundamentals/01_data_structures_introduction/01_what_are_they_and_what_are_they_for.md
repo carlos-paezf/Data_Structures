@@ -49,7 +49,7 @@ En términos sencillos, una estructura de datos es como una herramienta especial
 ```txt
 Array:           [ 0 ][ 1 ][ 2 ][ 3 ]
 Lista:           [10|•] -> [20|•] -> [30|null]
-Pila (Stack):    Top -> [C] -> [B] -> [A]
+Pila (Stack):   Top -> [C] -> [B] -> [A]
 Cola (Queue):    Front -> [X] -> [Y] -> [Z] <- Rear
 Árbol:
             10
@@ -59,11 +59,15 @@ Cola (Queue):    Front -> [X] -> [Y] -> [Z] <- Rear
 
 ## Ejemplos
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 ### Java - Paradigma: Orientado a Objetos
 
-`DataStructureDemo.java`
+<Tabs>
+<TabItem value="java-code" label="Código Ejemplo">
 
-```java
+```java title="DataStructureDemo.java" showLineNumbers
 package datastructures;
 
 import java.util.HashMap;
@@ -85,9 +89,10 @@ public class DataStructureDemo {
 }
 ```
 
-`DataStructureDemoTest.java`
+</TabItem>
+<TabItem value="java-test" label="Test Unitario">
 
-```java
+```java title="DataStructureDemoTest.java" showLineNumbers
 package datastructures;
 
 import org.junit.jupiter.api.Test;
@@ -105,11 +110,15 @@ public class DataStructureDemoTest {
 }
 ```
 
+</TabItem>
+</Tabs>
+
 ### Python - Paradigma: Procedural
 
-`demo_structures.py`
+<Tabs>
+<TabItem value="python-code" label="Código Ejemplo">
 
-```py
+```py title="demo_structures.py" showLineNumbers
 from collections import deque
 
 def demo_structures():
@@ -125,9 +134,10 @@ if __name__ == "__main__":
     demo_structures()
 ```
 
-`test_demo_structures.py`
+</TabItem>
+<TabItem value="python-test" label="Test Unitario">
 
-```py
+```py  title="test_demo_structures.py" showLineNumbers
 import unittest
 from collections import deque
 
@@ -142,11 +152,15 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
+</TabItem>
+</Tabs>
+
 ### TypeScript - Paradigma: Funcional
 
-`demo.ts`
+<Tabs>
+<TabItem value="ts-code" label="Código Ejemplo">
 
-```ts
+```ts title="demo.ts" showLineNumbers
 type User = { id: number, name: string };
 const users: Map<number, User> = new Map();
 
@@ -158,20 +172,24 @@ const getUserName = (id: number): string => users.get(id)?.name ?? "Desconocido"
 console.log(getUserName(1)); // "Laura"
 ```
 
-`demo.test.ts`
+</TabItem>
+<TabItem value="ts-test" label="Test Unitario">
 
-```ts
+```ts title="demo.test.ts" showLineNumbers
 import { describe, test, expect } from '@jest/globals';
 
 describe('User Map', () => {
     const users = new Map<number, { id: number; name: string }>();
     users.set(1, { id: 1, name: "Laura" });
 
-    test('get user name', () => {
+test('get user name', () => {
         expect(users.get(1)?.name).toBe("Laura");
     });
 });
 ```
+
+</TabItem>
+</Tabs>
 
 ## Referencias
 
