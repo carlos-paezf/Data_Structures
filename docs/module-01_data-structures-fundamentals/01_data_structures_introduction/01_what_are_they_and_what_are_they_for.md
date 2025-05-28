@@ -44,18 +44,54 @@ En términos sencillos, una estructura de datos es como una herramienta especial
 |Hash Table|Indexación de usuario por número de documento o ID|
 |Grafo|Mapas de rutas en GPS o algoritmos de redes sociales|
 
-## Representación visual (ASCII)
+## Representación visual
 
-```txt
-Array:           [ 0 ][ 1 ][ 2 ][ 3 ]
-Lista:           [10|•] -> [20|•] -> [30|null]
-Pila (Stack):   Top -> [C] -> [B] -> [A]
-Cola (Queue):    Front -> [X] -> [Y] -> [Z] <- Rear
-Árbol:
-            10
-          /    \
-        5       20
-```
+- Array:
+
+  ```mermaid
+  graph LR
+      A[Índice 0: Valor A] --> B[Índice 1: Valor B]
+      B --> C[Índice 2: Valor C]
+      C --> D[Índice 3: Valor D]
+  ```
+
+- Lista:
+
+  ```mermaid
+  graph LR
+      A["10|•"] --> B["20|•"]
+      B --> C["30 → null"]
+  ```
+
+- Pila (Stack)
+
+  ```mermaid
+  graph TD
+      A[Top: Elemento 3] --> B[Elemento 2]
+      B --> C[Elemento 1]
+      C --> D[Bottom: Elemento 0]
+  ```
+
+- Cola (Queue)
+
+  ```mermaid
+  graph LR
+      A["Frente: 10"] --> B["20"]
+      B --> C["30"]
+      C --> D["Fondo: 40"]
+  ```
+
+- Árbol
+  
+  ```mermaid
+  graph TD
+    A["Raíz: 50"] --> B["Izquierda: 30"]
+    A --> C["Derecha: 70"]
+    B --> D["20"]
+    B --> E["40"]
+    C --> F["60"]
+    C --> G["80"]
+  ```
 
 ## Ejemplos
 

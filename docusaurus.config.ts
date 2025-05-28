@@ -139,6 +139,13 @@ const config: Config = {
 			additionalLanguages: [ "java" ]
 		},
 	} satisfies Preset.ThemeConfig,
+
+	// Enable the mermaid theme for markdown
+	markdown: {
+		mermaid: true
+	},
+
+	themes: [ "@docusaurus/theme-mermaid" ]
 };
 
 export default config;

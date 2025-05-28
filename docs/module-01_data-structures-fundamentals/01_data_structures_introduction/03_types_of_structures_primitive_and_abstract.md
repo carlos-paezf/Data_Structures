@@ -53,14 +53,29 @@ Ejemplos comunes:
 |Cola (Queue)|Procesamiento de tareas, impresión|
 |Grafo|Mapa GPS, redes sociales|
 
-## Representación Visual (ASCII)
+## Representación Visual
 
-```txt
-Primitiva: int x = 5;
+- Primitiva: Un número
 
-Abstracta: Stack
-Top → [5] → [3] → [1] → null
-```
+  ```java
+  int x = 5;
+  ```
+
+- Abstracta: Stack
+
+  ```mermaid
+  graph TD
+      subgraph Pila
+          A["Top: Elemento 5"] --> B["Elemento 4"]
+          B --> C["Elemento 3"]
+          C --> D["Elemento 2"]
+          D --> E["Elemento 1"]
+          E --> F["Bottom: Elemento 0"]
+      end
+
+      Push -->|Nuevo elemento| A
+      Pop -->|Elimina Top| B
+  ```
 
 ## Ejemplos
 
