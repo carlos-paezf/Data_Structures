@@ -62,10 +62,11 @@ Cola (Queue):    Front -> [X] -> [Y] -> [Z] <- Rear
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-### Java - Paradigma: Orientado a Objetos
+<Tabs>
+<TabItem value="java" label="Paradigma: Orientado a Objetos">
 
 <Tabs>
-<TabItem value="java-code" label="Código Ejemplo">
+<TabItem value="java-code" label="Código Java Ejemplo">
 
 ```java title="DataStructureDemo.java" showLineNumbers
 package datastructures;
@@ -113,10 +114,11 @@ public class DataStructureDemoTest {
 </TabItem>
 </Tabs>
 
-### Python - Paradigma: Procedural
+</TabItem>
+<TabItem value="python" label="Paradigma: Procedural">
 
 <Tabs>
-<TabItem value="python-code" label="Código Ejemplo">
+<TabItem value="python-code" label="Código Python Ejemplo">
 
 ```py title="demo_structures.py" showLineNumbers
 from collections import deque
@@ -155,10 +157,11 @@ if __name__ == '__main__':
 </TabItem>
 </Tabs>
 
-### TypeScript - Paradigma: Funcional
+</TabItem>
+<TabItem value="ts" label="Paradigma: Funcional">
 
 <Tabs>
-<TabItem value="ts-code" label="Código Ejemplo">
+<TabItem value="ts-code" label="Código TypeScript Ejemplo">
 
 ```ts title="demo.ts" showLineNumbers
 type User = { id: number, name: string };
@@ -187,6 +190,9 @@ test('get user name', () => {
     });
 });
 ```
+
+</TabItem>
+</Tabs>
 
 </TabItem>
 </Tabs>

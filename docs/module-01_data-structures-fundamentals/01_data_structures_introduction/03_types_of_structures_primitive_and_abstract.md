@@ -67,10 +67,11 @@ Top → [5] → [3] → [1] → null
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-### Java - Paradigma: Orientado a Objetos
+<Tabs>
+<TabItem value="java" label="Paradigma: Orientado a Objetos">
 
 <Tabs>
-<TabItem value="java-code" label="Código Ejemplo">
+<TabItem value="java-code" label="Código Java Ejemplo">
 
 ```java title="PrimitiveAndAbstract.java" showLineNumbers
 import java.util.Stack
@@ -116,10 +117,11 @@ class PrimitiveAndAbstractTest {
 </TabItem>
 </Tabs>
 
-### Python - Paradigma: Procedural
+</TabItem>
+<TabItem value="python" label="Paradigma: Procedural">
 
 <Tabs>
-<TabItem value="python-code" label="Código Ejemplo">
+<TabItem value="python-code" label="Código Python Ejemplo">
 
 ```py title="structures.py" showLineNumbers
 def sum_primitives(a: int, b: int) -> int:
@@ -155,10 +157,11 @@ if __name__ == "__main__":
 </TabItem>
 </Tabs>
 
-### TypeScript - Paradigma: Funcional
+</TabItem>
+<TabItem value="ts" label="Paradigma: Funcional">
 
 <Tabs>
-<TabItem value="ts-code" label="Código Ejemplo">
+<TabItem value="ts-code" label="Código TypeScript Ejemplo">
 
 ```ts title="structures.ts" showLineNumbers
 export const combinePrimitives = (a: number, b: number): number => a + b;
@@ -186,6 +189,9 @@ test("use set stores roles", () => {
     expect(result.has("admin")).toBe(true);
 })
 ```
+
+</TabItem>
+</Tabs>
 
 </TabItem>
 </Tabs>
