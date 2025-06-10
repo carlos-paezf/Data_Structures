@@ -1,6 +1,6 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -138,6 +138,11 @@ const config: Config = {
 			darkTheme: prismThemes.dracula,
 			additionalLanguages: [ "java" ]
 		},
+		// Improve SEO
+		metadata: [
+			{ name: 'keywords', content: 'data structures, academic, explanation, university, algorithms, computer science, java, javascript, python, typescript, documentation' },
+			{ name: 'twitter:card', content: 'summary_large_image' },
+		],
 	} satisfies Preset.ThemeConfig,
 
 	// Enable the mermaid theme for markdown
@@ -145,7 +150,10 @@ const config: Config = {
 		mermaid: true
 	},
 
-	themes: [ "@docusaurus/theme-mermaid" ]
+	themes: [
+		'@docusaurus/theme-mermaid',
+		'@docusaurus/theme-live-codeblock'
+	],
 };
 
 export default config;
