@@ -5,8 +5,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-	title: 'Data Structures and Algorithms',
-	tagline: 'Learn Data Structures and Algorithms',
+	title: 'Estructuras de Datos y Algoritmos',
+	tagline: 'Aprende Estructuras de Datos y Algoritmos',
 	favicon: 'img/favicon.ico',
 
 	// Set the production url of your site here
@@ -104,9 +104,9 @@ const config: Config = {
 						},
 					],
 				},
-				{
+				/* {
 					title: 'Community',
-					/*items: [
+					items: [
 						{
 							label: 'Stack Overflow',
 							href: 'https://stackoverflow.com/questions/tagged/docusaurus',
@@ -119,14 +119,22 @@ const config: Config = {
 							label: 'X',
 							href: 'https://x.com/docusaurus',
 						},
-					],*/
-				},
+					],
+				},*/
 				{
 					title: 'More',
 					items: [
 						{
-							label: 'GitHub',
-							href: 'https://github.com/carlos-paezf/Data_Structures',
+							label: 'Object Oriented Programming Intersemester',
+							href: 'https://github.com/carlos-paezf/Object_Oriented_Programming_Intersemester'
+						},
+						{
+							label: 'JS and TS In-depth Elective',
+							href: 'https://github.com/carlos-paezf/JS_and_TS_In-depth_Elective'
+						},
+						{
+							label: 'Software Construction',
+							href: 'https://carlos-paezf.github.io/Software_Construction/',
 						},
 					],
 				},

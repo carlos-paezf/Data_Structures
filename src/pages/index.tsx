@@ -33,8 +33,8 @@ export default function Home (): ReactNode {
 	const { siteConfig } = useDocusaurusContext();
 	return (
 		<Layout
-			title={ `Hello from ${ siteConfig.title }` }
-			description="Description will go into a meta tag in <head />">
+			title={ `${ siteConfig.title }` }
+			description="Aprende sobre Estructuras de Datos y Algoritmos con ejemplos en diversos lenguajes y paradigmas de programación. Explora temas como listas, pilas, colas, árboles, grafos y más.">
 			<HomepageHeader />
 			<main>
 				<HomepageFeatures />
