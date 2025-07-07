@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://carlos-paezf.github.io/Data_Structures/en/blog</id>
-    <title>Data Structures and Algorithms Blog</title>
+    <title>Estructuras de Datos y Algoritmos Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://carlos-paezf.github.io/Data_Structures/en/blog"/>
-    <subtitle>Data Structures and Algorithms Blog</subtitle>
+    <subtitle>Estructuras de Datos y Algoritmos Blog</subtitle>
     <icon>https://carlos-paezf.github.io/Data_Structures/en/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
