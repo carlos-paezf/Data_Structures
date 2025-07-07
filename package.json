@@ -23,7 +23,6 @@
 		"@mdx-js/react": "^3.0.0",
 		"clsx": "^2.0.0",
 		"data-structures": "file:",
-		"docusaurus-live-brython": "3.0.0-beta.28",
 		"prism-react-renderer": "^2.3.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"
