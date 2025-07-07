@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
 		description: (
 			<>
 				Documentación abierta para estudiantes, profesores y entusiastas de la
-				informática. Aprende sobre estructuras de datos y algoritmos en un
+				informática. Aprende sobre Estructuras de Datos y Algoritmos en un
 				entorno colaborativo y accesible.
 			</>
 		),
