@@ -1,0 +1,8 @@
+{
+    "label": "Estructuras Lineales y Uso de Nodos",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "description": "Las estructuras lineales son aquellas en las que los elementos se organizan en una secuencia continua, como listas, pilas y colas. Su principal característica es que cada elemento tiene un sucesor (excepto el último), lo que permite recorrer la estructura de forma ordenada. Cuando se implementan con nodos—como en listas enlazadas—cada nodo almacena un dato y una referencia (o enlace) al siguiente nodo. Esta forma de representar datos facilita operaciones dinámicas, como inserciones o eliminaciones, sin necesidad de mover todos los elementos como en un array."
+    }
+}
