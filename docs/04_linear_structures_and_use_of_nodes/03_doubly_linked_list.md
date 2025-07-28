@@ -55,7 +55,7 @@ import TabItem from "@theme/TabItem";
 <Tabs>
 <TabItem value="code" label="Código Java Ejemplo">
 
-```java title="Node.java" showLineNumbers
+```java title="DNode.java" showLineNumbers
 /**
  * Node for doubly linked list
  */
@@ -78,7 +78,7 @@ class DNode<T> {
 }
 ```
 
-```java title="SinglyLinkedList.java" showLineNumbers
+```java title="DoublyLinkedList.java" showLineNumbers
 /**
  * Doubly linked list implementation
  */
