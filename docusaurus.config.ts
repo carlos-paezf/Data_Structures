@@ -1,6 +1,8 @@
 import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
+import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -37,7 +39,7 @@ const config: Config = {
 
 	presets: [
 		[
-			'classic',
+			'@docusaurus/preset-classic',
 			{
 				docs: {
 					sidebarPath: './sidebars.ts',
@@ -45,6 +47,8 @@ const config: Config = {
 					// Remove this to remove the "edit this page" links.
 					editUrl:
 						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+					remarkPlugins: [ remarkMath ],
+					rehypePlugins: [ rehypeKatex ],
 				},
 				blog: {
 					showReadingTime: true,
@@ -161,6 +165,16 @@ const config: Config = {
 	themes: [
 		'@docusaurus/theme-mermaid',
 		'@docusaurus/theme-live-codeblock'
+	],
+
+	stylesheets: [
+		{
+			href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+			type: 'text/css',
+			integrity:
+				'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+			crossorigin: 'anonymous',
+		},
 	],
 };
 
