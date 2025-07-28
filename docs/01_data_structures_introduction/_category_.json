@@ -1,0 +1,8 @@
+{
+    "label": "Introducción a las Estructuras de Datos",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "Las estructuras de datos son formatos organizativos que permiten almacenar, gestionar y acceder eficientemente a la información en un programa. Sirven como base para la resolución de problemas y optimización de algoritmos, ya que cada tipo (como listas, pilas, colas, árboles o grafos) tiene propiedades particulares que se ajustan mejor a ciertas tareas. Elegir la estructura adecuada facilita operaciones como búsquedas, inserciones y eliminaciones, haciendo que el software sea más robusto y ágil"
+    }
+}

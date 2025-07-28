@@ -72,7 +72,7 @@ const config: Config = {
 		// Replace with your project's social card
 		image: 'img/docusaurus-social-card.jpg',
 		navbar: {
-			title: 'Data Structures and Algorithms',
+			title: 'Estructuras de Datos y Algoritmos',
 			logo: {
 				alt: 'My Site Logo',
 				src: 'img/logo.svg',
@@ -82,7 +82,7 @@ const config: Config = {
 					type: 'docSidebar',
 					sidebarId: 'tutorialSidebar',
 					position: 'left',
-					label: 'Tutorial',
+					label: 'Conoce la Teoría',
 				},
 				// { to: '/blog', label: 'Blog', position: 'left' },
 				{
@@ -126,11 +126,11 @@ const config: Config = {
 					items: [
 						{
 							label: 'Object Oriented Programming Intersemester',
-							href: 'https://github.com/carlos-paezf/Object_Oriented_Programming_Intersemester'
+							href: 'https://carlos-paezf.github.io/Object_Oriented_Programming_Intersemester'
 						},
 						{
 							label: 'JS and TS In-depth Elective',
-							href: 'https://github.com/carlos-paezf/JS_and_TS_In-depth_Elective'
+							href: 'https://carlos-paezf.github.io/JS_and_TS_In-depth_Elective'
 						},
 						{
 							label: 'Software Construction',

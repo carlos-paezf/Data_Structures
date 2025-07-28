@@ -1,0 +1,8 @@
+{
+    "label": "Arreglos",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "Un array o arreglo es una estructura de datos que permite almacenar múltiples valores del mismo tipo bajo un solo nombre, organizados en posiciones indexadas. Cada elemento del array se accede mediante su índice, comenzando normalmente desde cero. Esto facilita operaciones como recorrer datos, buscar elementos específicos o aplicar transformaciones. Los arrays son esenciales en la programación porque optimizan el manejo de conjuntos de información, como listas de números, cadenas o incluso objetos."
+    }
+}

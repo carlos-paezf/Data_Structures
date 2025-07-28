@@ -1,0 +1,8 @@
+{
+    "label": "Análisis de Algoritmos",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "El análisis de algoritmos es el proceso de estudiar el rendimiento de una solución computacional, enfocándose en qué tan eficiente es en términos de tiempo (complejidad temporal) y espacio (complejidad espacial). Esta disciplina permite comparar distintos algoritmos que resuelven el mismo problema, evaluando cuál es más óptimo según el contexto. Se utilizan notaciones como Big O, Omega y Theta para describir su comportamiento en el peor, mejor y caso promedio respectivamente."
+    }
+}

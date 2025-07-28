@@ -10,21 +10,19 @@ Este proyecto es una plataforma de documentación educativa desarrollada con [Do
 
 Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructurado y multilingüe, que facilite el acceso a los siguientes temas:
 
-- Módulo 01: Fundamentos de Estructuras de Datos:
-  - Introducción a las estructuras de datos:
-    - ¿Qué son y para qué sirven?
-    - Eficiencia, espacio y tiempo
-    - Tipos de estructuras: primitivas y abstractas
-    - TDA (Tipos de datos abstractos)
-  - Arreglos:
-    - Arreglos estáticos (implementación en memoria, ventajas y limitaciones)
-    - Arreglos dinámicos (redimensionamiento, amortized cost)
-  - Análisis de algoritmos:
-    - Notación Big O
-    - Complejidad temporal y espacial
-    - Casos mejor, promedio y peor
-  - Evaluación de competencias: Implementación y comparación de arreglos estáticos vs dinámicos
-- Módulo 02: Estructuras Lineales y Uso de Nodos
+- Introducción a las estructuras de datos:
+  - ¿Qué son y para qué sirven?
+  - Eficiencia, espacio y tiempo
+  - Tipos de estructuras: primitivas y abstractas
+  - TDA (Tipos de datos abstractos)
+- Arreglos:
+  - Arreglos estáticos (implementación en memoria, ventajas y limitaciones)
+  - Arreglos dinámicos (redimensionamiento, amortized cost)
+- Análisis de algoritmos:
+  - Notación Big O
+  - Complejidad temporal y espacial
+  - Casos mejor, promedio y peor
+- Estructuras Lineales y Uso de Nodos
   - Nodos y Punteros (simulación en lenguajes sin punteros explícitos)
   - Listas enlazadas:
     - Simples
@@ -33,8 +31,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
     - Circulares dobles
   - Stack (Pilas): LIFO, implementación con arrays y listas enlazadas
   - Queue (Colas): FIFO, variantes (colas dobles, de prioridad)
-  - Evaluación de competencias: Proyecto de simulación para uso combinado de listas y colas
-- Módulo 03: Algoritmos de Ordenamiento
+- Algoritmos de Ordenamiento
   - Fundamentos del ordenamiento: estabilidad, adaptabilidad y comparaciones
   - Ordenamientos básicos:
     - Bubble Sort
@@ -48,8 +45,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
     - Counting Sort
     - Radix Sort
     - Bucket Sort
-  - Evaluación de competencias: Proyecto de Visualización comparativa de ordenamientos (tiempo real, animaciones y benchmarking)
-- Módulo 04: Estructuras No Lineales - Árboles
+- Estructuras No Lineales - Árboles
   - Definición y representación
   - Árboles binarios
   - Árboles binarios de búsqueda (BST)
@@ -59,8 +55,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
   - Tries (árboles de prefijo)
   - Árboles rojo-negro
   - Segment Trees y Fenwick Trees
-  - Evaluación de competencias: Implementación de un corrector ortográfico con Tries
-- Módulo 05: Estructuras No lineales - Grafos
+- Estructuras No lineales - Grafos
   - Definición, terminología y representación:
     - Lista de adyacencia
     - Matriz de adyacencia
@@ -72,8 +67,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
     - Prim
     - Kruskal
   - Aplicaciones reales: mapas, redes sociales, sistemas de recomendación
-  - Evaluación de competencias: Proyecto recomendador de amigos basado en grafos
-- Módulo 06: Estructuras especializadas
+- Estructuras especializadas
   - Skip Lists
   - Disjoint Set (Union Find)
   - Hashing
@@ -84,8 +78,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
   - Tablas Hash
   - LRU Cache con HashMap + Double LinkedList
   - Bloom Filters (introducción conceptual y comparación)
-  - Evaluación de competencias: Comparativa de estructuras para búsqueda eficiente (BST, AVL, Hash, Skip List)
-- Módulo 07: Aplicación Integral y Proyecto Final
+- Aplicación Integral y Proyecto Final
   - Análisis de estructuras según el caso
   - Comparación de estructuras para diferentes escenarios
   - Optimización en entornos reales (web, videojuegos, big data)
