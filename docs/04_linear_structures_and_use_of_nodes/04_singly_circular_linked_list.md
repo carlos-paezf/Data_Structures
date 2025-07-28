@@ -43,6 +43,9 @@ graph LR
 
 ## Ejemplo Técnico
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 <Tabs>
 <TabItem value="java" label="Paradigma:">
 
