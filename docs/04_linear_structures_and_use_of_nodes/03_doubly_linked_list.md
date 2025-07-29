@@ -44,6 +44,135 @@ graph LR
     D <--> E((Tail))
 ```
 
+## Flujo de acciones
+
+### Inserción al inicio
+
+```mermaid
+flowchart TD
+    A["Inicio: insertAtBeginning(data)"] --> B{"¿La lista está vacía? (head == null)"}
+    B -- Sí --> C["Crear un nuevo nodo con el dato"]
+    C --> D["Asignar head y tail al nuevo nodo"]
+    D --> Z["Fin"]
+
+    B -- No --> E["Crear un nuevo nodo con el dato"]
+    E --> F["Enlazar nuevoNodo.next = head"]
+    F --> G["Enlazar head.prev = nuevoNodo"]
+    G --> H["Actualizar head = nuevoNodo"]
+    H --> Z["Fin"]
+```
+
+1. **Verificar si la lista está vacía:** Si `head == null`, se crea un nuevo nodo y tanto `head` como `tail` apuntan a él.
+2. **Si la lista no está vacía:**
+   - Se crea un nuevo nodo.
+   - Su puntero `next` apunta al nodo actual de `head`.
+   - Se actualiza el puntero `prev` del nodo original de `head` para que apunte al nuevo nodo.
+   - Finalmente, se asigna el nuevo nodo como `head`.
+
+### Inserción al final
+
+```mermaid
+flowchart TD
+    A["Inicio: insertAtEnd(data)"] --> B{"¿La lista está vacía? (head == null)"}
+    B -- Sí --> C["Crear un nuevo nodo con el dato"]
+    C --> D["Asignar head y tail al nuevo nodo"]
+    D --> Z["Fin"]
+
+    B -- No --> E["Crear un nuevo nodo con el dato"]
+    E --> F["Enlazar tail.next = nuevoNodo"]
+    F --> G["Enlazar nuevoNodo.prev = tail"]
+    G --> H["Actualizar tail = nuevoNodo"]
+    H --> Z["Fin"]
+```
+
+1. **Verificar si la lista está vacía:** Si `head == null`, se crea un nuevo nodo y tanto `head` como `tail` apuntan a él.
+2. **Si la lista no está vacía:**
+   - Se crea un nuevo nodo.
+   - Se enlaza el puntero `next` del `tail` actual al nuevo nodo.
+   - Se enlaza el puntero `prev` del nuevo nodo al `tail` actual.
+   - Se actualiza el `tail` para que apunte al nuevo nodo.
+
+### Insertar en una posición especifica
+
+```mermaid
+flowchart TD
+    A["Inicio: insertAtPosition(pos, data)"] --> B{"¿La lista está vacía? (head == null)"}
+    B -- Sí --> C["Crear nuevo nodo con el dato"]
+    C --> D["Asignar head y tail al nuevo nodo"]
+    D --> Z["Fin"]
+
+    B -- No --> E{"pos <= 0?"}
+    E -- Sí --> F["Llamar a insertAtBeginning(data)"]
+    F --> Z["Fin"]
+
+    E -- No --> G{"pos >= tamaño de la lista?"}
+    G -- Sí --> H["Llamar a insertAtEnd(data)"]
+    H --> Z["Fin"]
+
+    G -- No --> I["Crear nuevo nodo con el dato"]
+    I --> J["Recorrer desde head hasta posición pos-1"]
+    J --> K["Enlazar nuevoNodo.next = current.next"]
+    K --> L["Enlazar nuevoNodo.prev = current"]
+    L --> M["Enlazar current.next.prev = nuevoNodo"]
+    M --> N["Enlazar current.next = nuevoNodo"]
+    N --> Z["Fin"]
+```
+
+1. **Lista vacía:** Si la lista está vacía (`head == null`), se crea un nodo y se asigna como `head` y `tail`.
+2. **Posición inicial:** Si `pos <= 0`, se llama a `insertAtBeginning(data)`.
+3. **Posición al final o más grande que el tamaño:** Si `pos >= tamaño`, se llama a `insertAtEnd(data)`.
+4. **Posición intermedia:**
+   - Se recorre la lista hasta llegar a la posición anterior a `pos` (`pos-1`).
+   - Se enlaza el nuevo nodo entre el nodo actual (`current`) y el siguiente.
+   - Se actualizan los punteros `next` y `prev` de los nodos vecinos.
+
+### Eliminación
+
+```mermaid
+flowchart TD
+    A["Inicio: delete(data)"] --> B{"¿La lista está vacía? (head == null)"}
+    B -- Sí --> Z["No hay nada que eliminar. Fin"]
+
+    B -- No --> C{"¿El nodo head contiene el dato?"}
+    C -- Sí --> D{"¿head == tail? (¿solo un nodo?)"}
+    D -- Sí --> E["head = tail = null"]
+    E --> Z["Fin"]
+    D -- No --> F["head = head.next"]
+    F --> G["head.prev = null"]
+    G --> Z["Fin"]
+
+    C -- No --> H["Crear puntero current = head.next"]
+    H --> I{"current != null"}
+    I -- No --> Z["Dato no encontrado. Fin"]
+    
+    I -- Sí --> J{"current.data == data"}
+    J -- No --> H2["Mover current = current.next"]
+    H2 --> I
+
+    J -- Sí --> K{"¿current == tail?"}
+    K -- Sí --> L["tail = tail.prev"]
+    L --> M["tail.next = null"]
+    M --> Z["Fin"]
+
+    K -- No --> N["current.prev.next = current.next"]
+    N --> O["current.next.prev = current.prev"]
+    O --> Z["Fin"]
+```
+
+1. **Lista vacía:** Si `head == null`, no hay nada que eliminar.
+2. **Eliminar la cabeza:**
+   1. Si el primer nodo contiene el dato:
+      - Si es el único nodo (`head == tail`), se deja la lista vacía (`head = tail = null`).
+      - Si hay más nodos, se mueve la cabeza al siguiente y se elimina el enlace al nodo previo (`head.prev = null`).
+3. **Buscar el nodo:**
+   - Se recorre la lista desde `head.next`.
+   - Si no se encuentra el dato, la función termina.
+4. **Eliminar el nodo encontrado:**
+   - Si el nodo es el `tail`, se mueve la cola hacia atrás y se elimina el enlace al siguiente (`tail.next = null`).
+   - Si está en el medio, se saltan los enlaces:
+     1. `current.prev.next = current.next`
+     2. `current.next.prev = current.prev`
+
 ## Ejemplo Técnico
 
 import Tabs from "@theme/Tabs";
