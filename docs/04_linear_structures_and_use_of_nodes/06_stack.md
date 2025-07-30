@@ -95,7 +95,7 @@ public class StackArray<T> {
 
 **Implementación con listas enlazadas:**
 
-```java title="DoublyCircularLinkedList.java" showLineNumbers
+```java title="StackLinkedList.java" showLineNumbers
 class Node<T> {
     T data;
     Node<T> next;
@@ -273,7 +273,7 @@ export const peek = <T>(stack: T[]): T => {
 export const isEmpty = <T>(stack: T[]): boolean => stack.length === 0;
 ```
 
-**Implementación con :**
+**Implementación con listas enlazadas:**
 
 ```ts showLineNumbers
 export type Node<T> = {
