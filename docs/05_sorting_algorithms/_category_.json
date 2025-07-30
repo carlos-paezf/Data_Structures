@@ -1,0 +1,8 @@
+{
+    "label": "Algoritmos de Ordenamiento",
+    "position": 6,
+    "link": {
+        "type": "generated-index",
+        "description": "Los algoritmos de ordenamiento son procedimientos utilizados para reorganizar elementos dentro de una estructura de datos (como arrays o listas) siguiendo un criterio específico, normalmente de menor a mayor o viceversa. Su objetivo principal es facilitar búsquedas, comparaciones y análisis posteriores. Existen distintos tipos, como Bubble Sort, Merge Sort, Quick Sort o Insertion Sort, cada uno con características particulares en cuanto a eficiencia, complejidad y casos de uso. Evaluarlos mediante análisis algorítmico permite elegir el más adecuado según el volumen de datos y los requisitos del sistema."
+    }
+}
