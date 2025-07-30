@@ -171,7 +171,7 @@ Nombres ingresados: [Juan, María, Carlos]
 - Usa un `ArrayList<String>` en lugar de un arreglo estático.
 - Recorre la lista usando un `for-each` para mostrar los elementos.
 
-### Eliminar elementos repetidos
+### Reto 2: Eliminar elementos repetidos
 
 *Nivel:* Medio
 
