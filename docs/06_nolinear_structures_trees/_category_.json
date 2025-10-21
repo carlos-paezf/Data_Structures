@@ -1,0 +1,8 @@
+{
+    "label": "Estructuras no lineales - Árboles",
+    "position": 7,
+    "link": {
+        "type": "generated-index",
+        "description": "Las estructuras no lineales conocidas como árboles son modelos de datos jerárquicos que organizan la información en niveles, partiendo de un nodo raíz y ramificándose en nodos hijos. A diferencia de las estructuras lineales como listas o arreglos, los árboles permiten representar relaciones de dependencia o clasificación, donde cada nodo puede tener múltiples descendientes pero solo un antecesor directo. Esta organización facilita operaciones como búsqueda, inserción y recorrido eficiente, especialmente en contextos como sistemas de archivos, bases de datos, algoritmos de decisión y estructuras como árboles binarios, AVL o B-trees. Su diseño refleja una lógica de ramificación que se adapta bien a problemas que requieren segmentación, jerarquía o exploración recursiva."
+    }
+}
