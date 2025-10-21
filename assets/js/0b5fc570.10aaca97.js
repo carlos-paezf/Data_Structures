@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdata_structures=globalThis.webpackChunkdata_structures||[]).push([[817],{9654:t=>{t.exports=JSON.parse('{"metadata":{"permalink":"/Data_Structures/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
