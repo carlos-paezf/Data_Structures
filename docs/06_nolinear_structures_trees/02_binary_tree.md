@@ -66,10 +66,10 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="java" label="Paradigma Orientado a Objetos">
+<TabItem value="java" label="Paradigma: Orientado a Objetos">
 
 <Tabs>
-<TabItem value="code" label="Código Ejemplo">
+<TabItem value="code" label="Código Java Ejemplo">
 
 ```java showLineNumbers title="BinaryNode.java"
 package domain;
@@ -249,10 +249,11 @@ public class BinaryTreeTest {
 </TabItem>
 </Tabs>
 
-<TabItem value="java" label="Paradigma Procedural">
+</TabItem>
+<TabItem value="python" label="Paradigma: Procedural">
 
 <Tabs>
-<TabItem value="code" label="Código Ejemplo">
+<TabItem value="code" label="Código Python Ejemplo">
 
 ```py showLineNumbers
 def create_node(value):
@@ -370,10 +371,12 @@ def test_delete_node_with_two_children(sample_tree):
 
 </TabItem>
 </Tabs>
-<TabItem value="java" label="Paradigma Funcional">
+
+</TabItem>
+<TabItem value="typescript" label="Paradigm: Funcional">
 
 <Tabs>
-<TabItem value="code" label="Código Ejemplo">
+<TabItem value="code" label="Código Typescript Ejemplo">
 
 ```ts showLineNumbers
 export type BinaryNode = Readonly<{
